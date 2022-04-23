@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS style sheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Google font overpass-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body class="container">
+    <main>
+      <div class="content">
+        <div class="active_inactive">
+          <img
+            class="star_icon"
+            src="images/icon-star.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <h1>How did we do?</h1>
+
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+
+          <!--Radio Buttons - Customer Raiting -->
+          <div class="number-container">
+            <input id="btn1" type="radio" name="radiobtn" class="number" />
+            <label for="btn1">1</label>
+
+            <input id="btn2" type="radio" name="radiobtn" class="number" />
+            <label for="btn2">2</label>
+
+            <input id="btn3" type="radio" name="radiobtn" class="number" />
+            <label for="btn3">3</label>
+
+            <input id="btn4" type="radio" name="radiobtn" class="number" />
+            <label for="btn4">4</label>
+
+            <input id="btn5" type="radio" name="radiobtn" class="number" />
+            <label for="btn5">5</label>
+          </div>
+
+          <!--Submit Button -->
+          <div class="button-container">
+            <button class="button">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by Frontend Mentor. Coded by
+      <a href="https://github.com/Joe-Lindie?tab=repositories">Joe Lindie</a>.
+    </footer>
+
+    <!--Thank you page section in main.js-->
+    <script src="main.js"></script>
+  </body>
+</html>

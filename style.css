@@ -1,0 +1,189 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    /*Primary colours */ 
+     --orange: hsl(25, 97%, 53%);
+
+     /*Neutral colours */ 
+     --White: hsl(0, 0%, 100%);
+     --LightGrey: hsl(217, 12%, 63%);
+     --buttonBak:  hsl(217, 12%, 22%);
+     --MediumGrey: hsl(216, 12%, 54%);
+     --DarkBlue: hsl(213, 19%, 18%);
+     --VeryDarkBlue: hsl(216, 12%, 8%);
+  }
+
+  body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--VeryDarkBlue);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .star_icon { 
+      background-color: var(--buttonBak);
+      width: 2rem;
+      border-radius: 50%;
+      padding: 0.7rem;
+  }
+
+  .content { 
+      background-color: var(--DarkBlue);
+      border-radius: 1rem;
+      width: 330px;
+      height: 380px;
+      padding: 1rem;  
+  }
+
+  /*Content Desktop View*/
+@media (min-width: 750px) {
+    .content {
+        width: 415px;
+        height: 415px;
+        padding: 2rem;  
+    }
+}
+
+  h1 {
+    color: var(--White);
+    padding-bottom: 22px;
+    padding-top: 20px;
+  }
+
+  p {
+      color: var(--LightGrey);
+      font-size: 15px;
+      padding-bottom: 2rem;
+      line-height: 1.4rem;
+  }
+
+.number-container {
+    display: flex;
+    justify-content: space-around; 
+}
+
+input.number {
+  display: none;
+}
+
+input[name="radiobtn"]+label {
+  display: flex;
+  justify-content: center;
+  color: var(--LightGrey);
+  background-color: var(--buttonBak);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0.7rem;
+  margin-bottom: 22px;  
+  cursor: pointer;
+}
+
+input[name="radiobtn"]+label:hover {
+  background-color:var(--orange);
+  color: var(--White);
+}
+
+input[name="radiobtn"]:checked+label {
+  background-color: var(--LightGrey);
+  color: var(--White);
+}
+
+  .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  button {
+      background-color: var(--orange);
+      color: var(--White);
+      border-radius: 1.5rem;
+      border: none;
+      width: 280px;
+      height: 45px; 
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+  }
+
+    /*Content Desktop View*/
+@media (min-width: 750px) {
+    button {
+        width: 340px;
+    }
+}
+
+  button, .number {
+      cursor: pointer;
+  }
+
+  .number:hover {
+      background-color: var(--orange);
+      color: var(--White);
+  }
+
+  button:hover {
+      background-color: var(--White);
+      color: var(--orange);
+  }
+    /*THANK YOU PAGE SECTION */ 
+
+  .thank_you_container {
+   text-align: center;
+  }
+
+  .thank_you_container img {
+      padding-bottom: 20px;
+  }
+
+  .thank_you_msg_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .selection_msg {
+      background-color: var(--buttonBak);
+      color: var(--orange);
+      padding-bottom: 0;
+      padding: 10px;
+      margin-bottom: 30px;
+      border-radius: 1.5rem; 
+  }
+
+  .thank_you_msg {
+      color: var(--White);
+      font-weight: 700;
+      font-size: 2em;
+  }
+
+  footer {
+  color: var(--LightGrey);
+  margin-top: 3rem;
+  font-size: 0.7rem;
+  }
+
+  footer a {
+  text-decoration: none;
+  color: var(--LightGrey);
+  }
+
+  .attribution a:hover {
+    text-decoration: underline;
+  }
