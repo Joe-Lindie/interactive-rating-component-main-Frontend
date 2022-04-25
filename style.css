@@ -142,6 +142,13 @@ input[name="radiobtn"]:checked+label {
       background-color: var(--White);
       color: var(--orange);
   }
+
+  .error_msg {
+    color: red;
+    text-align: center;
+    font-size: 12px;
+  
+  }
     /*THANK YOU PAGE SECTION */ 
 
   .thank_you_container {
